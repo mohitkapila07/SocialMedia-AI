@@ -1,0 +1,11 @@
+<!doctype html><html><head>
+    <script>
+      /* socialmedia pre-theme */
+      try {
+        const raw = localStorage.getItem('socialmedia_settings');
+        const saved = raw ? JSON.parse(raw) : null;
+        const theme = saved?.theme || localStorage.getItem('socialmedia_theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+        document.body.classList.add(theme === 'light' ? 'light-theme' : 'dark-theme');
+      } catch(e) {}
+    </script><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>SocialMedia AI</title></head><body><div id="root"></div><script type="module" src="/src/main.jsx"></script></body></html>

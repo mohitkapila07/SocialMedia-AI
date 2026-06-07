@@ -1,0 +1,10 @@
+V10 changes:
+- Added Connect Instagram OAuth button in Channels modal/page.
+- Added backend OAuth starter endpoints: /oauth/meta/start and /oauth/meta/callback.
+- Added Meta OAuth environment variables in backend/.env.example.
+- Improved light theme contrast, colors, sidebar, navbar, cards, inputs and buttons.
+- Kept manual/demo token connect for local testing.
+
+Run:
+Backend: cd backend && pip install -r requirements.txt && uvicorn app.main:app --reload
+Frontend: cd frontend && npm install && npm run dev
